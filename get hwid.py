@@ -1,15 +1,12 @@
-import subprocess, time, os
+import subprocess
+import os as o; o.system('cls')if os.name == 'nt' else 'clear'
 from colorama import Fore
 
 hwid = subprocess.check_output('wmic csproduct get uuid').decode().split('\n')[1].strip()
 
 os.system("cls")
-print(Fore.RED)
-banner = """                
+banner = """
 |__| |  | | |  \    \_/ | |\ | 
-|  | |/\| | |__/    / \ | | \| 
-"""
-print(banner)
-print(f'HWID: {hwid}') 
-print(Fore.RESET)
+|  | |/\| | |__/    / \ | | \| """
+print(f'{Fore.RED}{banner}\nHWID: {hwid}{Fore.RESET}') 
 exit()
