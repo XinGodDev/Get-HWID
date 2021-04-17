@@ -8,4 +8,5 @@ os.system("cls")
 banner = """
 |__| |  | | |  \    \_/ | |\ | 
 |  | |/\| | |__/    / \ | | \| """
+
 print(f'{Fore.RED}{banner}\nHWID: {hwid}{Fore.RESET}') 
