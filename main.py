@@ -1,5 +1,5 @@
 import subprocess
-import os as o; o.system('cls')if os.name == 'nt' else 'clear'
+import os as o; o.system('cls')if o.name == 'nt' else 'clear'
 from colorama import Fore
 
 hwid = subprocess.check_output('wmic csproduct get uuid').decode().split('\n')[1].strip()
